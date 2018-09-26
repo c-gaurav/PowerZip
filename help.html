@@ -1,0 +1,592 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>How to use PowerZip</title>
+<style>
+<!--
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;
+	}
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align: justify; line-height: 18.0pt"><font color="#FF0000"><u>
+<span style="font-size: 20.0pt; font-family: Times New Roman">How to use PowerZip</span></u></font></h1>
+
+<p class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+<font color="#0000FF"><span style="font-family: Book Antiqua"><u><b><i>Contents:</i></b></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>&nbsp;<a href="#Acknowledgement"><b>Acknowledgement</b>&nbsp;</a></u><a href="#Acknowledgement">&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<u><b><i><a name="Top">Top</a></i></b></u></span></font></p>
+<ol start="1" type="1" style="margin-bottom: 0in">
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h3><font color="#0000FF" face="Book Antiqua"><b><i><u>
+  <a href="#Creating a new ZIP File">Creating a new ZIP File</a> </u></i></b>
+  </font></h3>
+
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Opening a ZIP or JAR File">Opening a ZIP or JAR File </a></u></i>
+  </b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+
+  <a href="#Extracting Files">Extracting Files </a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Adding Files to an existing ZIP archive">Adding Files to existing 
+  ZIP archives</a> </u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Removing Files from an existing ZIP archive">Removing Files from 
+  existing ZIP archives </a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Closing an opened archive">Closing an 
+  opened archive</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Moving an archive from one location to another">Moving an 
+  archive from one location to another</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Copying an archive">Copying an 
+  archive</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Delete an archive">Renaming an 
+  archive</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Delete an archive">Delete an 
+  archive</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Using Save as function">Using Save as 
+  function</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Finding a substring in the name field of an opened archive">Finding a 
+  substring in the name field of an opened archive</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Send an archive using FTP">Send an 
+  archive using FTP</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Encrypt or Decrypt a archive">Encrypt or 
+  Decrypt a archive</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Using open with">Using open 
+  with </a> </u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Changing skin">Changing skin</a></u></i></b></font></h4>
+  </li>
+
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#Using features of the help file">Using features 
+  of the help file</a></u></i></b></font></h4>
+  </li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <h4><font color="#0000FF" face="Book Antiqua" size="4"><b><i><u>
+  <a href="#About the Author">About the 
+  Author </a></u></i></b></font></h4>
+  </li>
+
+</ol>
+<p>&nbsp;</p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<font color="#0000FF" size="4"><b><i><u><span style="font-family: Book Antiqua">
+<a name="Creating a new ZIP File">Creating a new ZIP File</a></span></u></i></b></font></p>
+<p class="MsoNormal" style="text-align: left; line-height: 200%"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">User can create a new archive by 
+selecting <b>New Archive</b> from the PowerZip <b>File </b>
+
+pull-down menu or by clicking the <b>New</b> toolbar button. This activates the 
+Save dialog box.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">First, the user has to type the name of 
+the ZIP file he wants to create (<i>not the names of the files he want to 
+compress).</i> This dialog box works similarly to standard Windows file dialog 
+boxes, so user can choose the drive and folder where the archive will be 
+created. The names of any existing archives on the selected drive and folder are 
+listed to help user choose a name that is not already in use.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">Normally after creating an archive the 
+user will want to add files to the archive, so then automatically activated the 
+Add dialog box. In the Add dialog box, select the drive from drive pull-down 
+box, then the directory in the box below and double click it. Then select one or 
+more file or folders and click the (&gt;) button. This will add those files to the 
+Files to add box that will be added to the archive when Add button is clicked. 
+To remove files from the Files to add box, select them and click (&lt;) button. To 
+remove all, user can click the (&lt;&lt;) button. </span></p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">&nbsp;</p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">&gt;To view the description of file, there 
+is an option to select it in the Files to add box and click File Desc... button. 
+If the user wants to put all the files in the directory and subdirectories in 
+the same arrangement to a ZIP archive, he should check Include Sub Folders 
+checkbox.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">If user need backup to the files that 
+are to be added, he can check Create Backup checkbox and if he wants to remove 
+the original files on compression, he can check Delete on Compression checkbox.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">Note: One can select multiple files in 
+both Select File box and Files to add box using normal Windows file selection 
+conventions.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">&nbsp;</p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<font color="#0000FF"><b><i><u><span style="font-family: Book Antiqua">
+
+<a name="Opening a ZIP or JAR File">Opening a ZIP or JAR File</a></span></u></i></b></font></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">To open an archive, the user can use the
+<b>Open</b> toolbar button or select <b>Open Archive</b> from the PowerZip <b>File </b>pull-down menu to activate the standard Open dialog box.</span></p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">Then, select the ZIP file he wants to 
+open in the Open dialog box. This dialog box works just like the Open dialog 
+boxes in other applications: just select the file you want to open from the list 
+of files.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">Once an existing ZIP archive is open 
+user can extract the files in the archive. The files in a ZIP archive are listed 
+in a list box in the main PowerZip window.</span></p>
+<ul type="disc" style="margin-bottom: 0in">
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <p style="text-align: left">
+  <span style="font-family: Book Antiqua">All the file names, with details, 
+  stored in the archive can viewed using the scroll bar or arrow keys.</span></li>
+</ul>
+<p align="left"><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">&nbsp;</p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<font color="#0000FF"><b><i><u><span style="font-family: Book Antiqua">
+<a name="Extracting Files">Extracting Files</a></span></u></i></b></font></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">When one extracts a file, PowerZip decompresses it and places it in the folder of his choice. He can 
+restore whole folders and retain the structure of any sub-folders.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">If he selects <b>Extract</b> from the <b>
+
+Actions</b> pull-down menu or clicks the <b>Extract</b> toolbar button, PowerZip lets him choose the folder where he'd like to place the 
+extracted files by opening an Extract to dialog box.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">The Extract to dialog box provides the 
+following options:</span></p>
+<ul type="disc" style="margin-bottom: 0in">
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <p style="text-align: left">
+  <span style="font-family: Book Antiqua">The <b>Selected files</b> option 
+  button instructs PowerZip to extract only files that are 
+  selected in the main PowerZip window. User can use conventional 
+  file selection methods to choose files. This option is disabled if no files 
+  are selected. </span></li>
+
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <p style="text-align: left">
+  <span style="font-family: Book Antiqua">The <b>All files</b> option button 
+  instructs PowerZip to extract all files from the archive.
+  </span></li>
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <p style="text-align: left">
+  <span style="font-family: Book Antiqua">The <b>Files</b> option button and 
+  edit field allow user to specify which files are extracted using filenames.
+  </span></li>
+
+  <li class="MsoNormal" style="text-align: justify; line-height: 18.0pt">
+  <p style="text-align: left">
+  <span style="font-family: Book Antiqua">The <b>Overwrite files</b> checkbox 
+  determines whether existing files are overwritten with files from the archive.
+  </span></li>
+</ul>
+<p align="left"><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p align="left">&nbsp;</p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<font color="#0000FF"><b><i><u><span style="font-family: Book Antiqua">
+
+<a name="Adding Files to an existing ZIP archive">Adding Files to an existing 
+ZIP archive</a></span></u></i></b></font></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">User can add files to an existing 
+archive he has opened or to a new archive he has created, as in the previous 
+section. If the Add<b> </b>dialog box is not displayed, he can select <b>Add </b>
+from the <b>Actions </b>pull-down menu or click the <b>Add</b> toolbar button.</span></p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">&gt;In the Add dialog box, select the files 
+one wants to add to the ZIP archive. One can select multiple files using normal 
+Windows file selection conventions. Once this is done, click the <b>Add </b>
+button to add the files. Once PowerZip finishes this, it will 
+update the file list in the main window to reflect the new files in the archive.</span></p>
+<p align="left"><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u><b><i><u><span style="font-size: 12.0pt; font-family: Book Antiqua"><br clear="all" style="page-break-before: always">
+&nbsp;</span></u></i></b></p>
+<p align="left">&nbsp;</p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<font color="#0000FF"><b><i><u><span style="font-family: Book Antiqua">
+<a name="Removing Files from an existing ZIP archive">Removing Files from an 
+existing ZIP archive</a></span></u></i></b></font></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">PowerZip can remove 
+selected files from within an existing archive, or delete the entire archive. <b>
+Delete</b> from the <b>Actions</b> menu deletes the selected. Select entries 
+from the list box in an open archive, then choose the <b>Delete</b> from the <b>
+Actions</b> pull-down menu or click the Delete toolbar button.</span></p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt"><i>
+<span style="font-family: Book Antiqua">Note:</span></i><span style="font-family: Book Antiqua"> 
+These operations cannot be undone.</span></p>
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+<span style="font-family: Book Antiqua">&nbsp;</span><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua"><a href="#Top"><font color="#FF0000">Go 
+to top</font></a></span></b></font></u></p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: left; line-height: 18.0pt">
+&nbsp;</p>
+
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Closing an opened archive">Closing an opened 
+archive</a></span></u></i></b></font></p>
+
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">The user can close an 
+opened file, in order to open another file by clicking on the <b>Close Archive</b> 
+from <b>File </b>menu. This clears the table area.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<a name="Moving an archive from one location to another">
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;">Moving an archive from one location to another</span></a></u></i><a name="Moving an archive from one location to another"><span lang="EN-GB" style="font-family: Book Antiqua">
+</span></a></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This provides a mechanism 
+to manage archives on the computer. This provides an easy interface that 
+requires selection of the archive to be moved and the location to where it 
+should be moved. The user needs to click on the <b>Move Archive </b>in <b>File
+</b>menu; this invokes a new window where he can select the file and the 
+destination. On clicking the move archive button the required operation takes 
+place.</span></p>
+
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<a name="Copying an archive">
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;">Copying an archive</span></a></u><a name="Copying an archive"><span lang="EN-GB" style="font-family:&quot;Book Antiqua&quot;">
+</span></a></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This is similar to how one 
+can move archive from one location to another. A similar window appears when 
+clicked on <b>Copy Archive </b>in <b>File </b>menu, as in move archive option. 
+The user selects the file which has to be copied and the destination. By 
+clicking on Copy Archive button the user allows the system to create a copy of 
+the archive.</span></p>
+
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Renaming an archive">Renaming an archive</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">Renaming of archives can be 
+done by clicking on the <b>Rename Archive</b> menu item in <b>File</b> menu. 
+This invokes a new window which requires the path of the file to be renamed and 
+the new name. And on clicking Rename Archive button the system renames the name 
+of the given file with the desired name entered.</span></p>
+
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Delete an archive">Delete an archive</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This option removes an 
+archive from the computer one can select the file to be removed in the new 
+window using a file dialog box and click on delete Archive button to allow 
+removal. This operation can be performed by clicking on<b> Delete Archive</b> 
+
+menu item in <b>File</b> Menu.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Using Save as function">Using Save as 
+function</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This operation can be 
+performed by clicking on <b>Save as…</b> menu item in <b>File</b> Menu. This 
+makes a new file dialog box to appear; there one can select the path and the new 
+name. On clicking on <b>Save</b> button of file Dialog Box the operation takes 
+place. It produces a combine effect of copy and rename.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;">
+<a name="Finding a substring in the name field of an opened archive">Finding a 
+substring in the name field of an opened archive</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This is a very useful tool, 
+which helps to locate a file entry in a large zip files. This can be used to 
+locate a particular type of files if the extension is searched. This operation 
+can be performed by clicking on Find menu item in Edit menu. Then appears a new 
+window with a text field and a find button. The user needs to enter the text he 
+wants to search. When he clicks on the find button the system searches for the 
+occurrences of the substring in the name field of the window and sets all the 
+corresponding rows as selected.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Send an archive using FTP">Send an archive 
+using FTP</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This feature is not full 
+flagged but it some how represents the dummy modal of as to how the actual FTP 
+would work for this product. To use this feature one needs to run the file 
+Server.java which starts a dummy server on the same computer. Then the user 
+needs to select the file to be sent. This can be done by invoking a window using
+<b>Send A File</b> menu item in <b>Action </b>menu and then selecting the file 
+using a file dialog box. The system starts sending the data once the file is 
+selected and displays the progress on the same window.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Encrypt or Decrypt a archive">Encrypt or 
+Decrypt a archive</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This feature can encrypt or 
+decrypt a zip file to send it on the network or store it safely. This can be 
+done by clicking on the Encrypt menu item in Action Menu. This invokes a window 
+which presents option of encryption or decryption. On selecting whether to 
+encrypt or decrypt a file dialog appears. Then the user needs to select the file 
+to perform the operation on. Then a confirmation window appears, on </span>
+<span style="font-family: Book Antiqua">clicking yes button the user allows the 
+operation to take place.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Using open with">Using open with</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">This feature works only 
+when an archive is open and only one table entry is selected. Then the user 
+needs to select with which application he wants to open the file with. The user 
+needs to have an idea of the file format; if he selects the correct application 
+then the file is extracted temporarily and opened with the selected application. 
+Else the system gives an error “Format not supported”. There are three types of 
+application to select from.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><font color="#0000FF"><b><i><u>
+<span lang="EN-GB" style="font-family:
+&quot;Book Antiqua&quot;"><a name="Changing skin">Changing skin</a></span></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">
+<span lang="EN-GB" style="font-family: Book Antiqua">There is an option to 
+change the look and feel of the product. The system first detects the native 
+operating system and sets the default skin for that operating system. The user 
+can select different look and feel or skin on the fly by selecting from the skin 
+in the skin menu in Option menu.</span></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+
+<p- Author</p>
+
+</p->
+
+<p class="MsoNormal" align="left">
+&nbsp;</p>
+<p class="MsoNormal" align="left">
+&nbsp;</p>
+<p class="MsoNormal" align="left">
+<font color="#0000FF" face="Book Antiqua" size="3"><b><i><u>
+<a name="Using features of the help file">Using features 
+  of the help file</a></u></i></b></font></p>
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left"><font face="Book Antiqua">The help file is 
+very simple to use just click on the links to find answers to your queries.</font></p>
+
+<p class="MsoNormal" align="left"><u>
+<font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p><font color="#0000FF" face="Book Antiqua"><b><i><u>
+<a name="About the Author">About the Author </a></u></i></b></font></p>
+<p><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p><font face="Book Antiqua">Jaideep Kadian and Sahil Bansal are pursuing their B.Tech in IT from YMCAIE,FBD.They have deep knowledge of core java and both are sun certified java programmers.</font></p>
+<p><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p>Any queries about the PowerZip or the author are welcome.</p></pany>
+<p>Email :<a href="www.yahoomail.com">jaideepkadian@yahoo.co.in</a>(Jaideep Kadian)</p>
+<p>Email :<a href="file:///G:/project/sahilymca@yahoo.co.in">sahilymca@yahoo.co.in</a>(Sahil Bansal)</p>
+<p><u><font size="2" color="#FF0000"><b><span style="font-family: Book Antiqua">
+<a href="#Top"><font color="#FF0000">Go to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left">&nbsp;</p>
+<p class="MsoNormal" align="left"><u><font color="#0000FF"><b><i>
+<span style="font-family: Book Antiqua"><a name="Acknowledgement">Acknowledgement</a></span></i></b></font></u></p>
+
+<p class="MsoNormal" align="left"><u><font size="2" color="#FF0000"><b>
+<span style="font-family: Book Antiqua"><a href="#Top"><font color="#FF0000">Go 
+to top</font></a></span></b></font></u></p>
+<p class="MsoNormal" align="left"><font face="Book Antiqua">As the programmers 
+of this PowerZip tool, we are pleased to thank the faculty 
+members of YMCAIE,FBD for their constant support and 
+guidance. Also I thank all my colleagues and friends who support me for creating 
+this tiny extractor application&nbsp;.</font></p>
+<p class="MsoNormal" align="left"><u><font size="2" color="#FF0000"><b>
+<span style="font-family: Book Antiqua"><a href="#Top"><font color="#FF0000">Go 
+to top</font></a></span></b></font></u></p>
+
+</body>
+
+</html>
